@@ -1,0 +1,247 @@
+/* General Styles */
+.wrapper {
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10%;
+}
+
+.text-description {
+    max-width: 500px;
+    text-align: left;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.text-description p {
+    font-size: 1.25rem;
+}
+
+.text-description .btn-sm {
+    font-size: 1.25rem;
+    padding: 0.5rem 1rem;
+}
+
+.text-description h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.text-description h1,
+.text-description h3,
+.text-description p {
+    margin: 0;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.card-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.col-md-4 {
+    flex: 1;
+    max-width: calc(33.333% - 20px);
+    box-sizing: border-box;
+}
+
+.card {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgb(12, 12, 12);
+    color: white;
+    width: 100%;
+    height: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    padding: 20px;
+}
+
+.card-img-top {
+    width: 50%;
+    height: 40%;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+.card h3 {
+    margin: 0;
+    color: #DEB887;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.text-description .btn-lg {
+    font-size: 2rem;
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+    transition: background-color 0.3s ease;
+    width: 20rem;
+    display: inline-block;
+    text-align: center;
+}
+
+.text-description .btn-lg:hover {
+    background-color: #c82333;
+}
+
+/* Media Queries */
+
+/* Show Navbar for screens above 1024px */
+@media screen and (min-width: 1025px) {
+    .navbar {
+        display: flex;
+    }
+    
+    .card h3 { font-size: 1.6rem; }
+    .wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 10%;
+    }
+
+    .text-description {
+        margin-right: 20px;
+        text-align: left;
+    }
+    
+
+    .card-row {
+        flex-direction: row;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .col-md-4 {
+        flex: 1 1 calc(33.333% - 10px);
+        max-width: calc(33.333% - 10px);
+    }
+}
+
+
+/* Hide Navbar and show Mobile Home Icon for screens up to 768px */
+@media screen and (max-width: 1024px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .text-description {
+        margin-right: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .card-row {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .col-md-4 {
+        flex: 1 1 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+
+    .card {
+        height: 16rem;
+    }
+    
+    .button-group {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        padding: 10px;
+        background-color: rgba(20, 20, 20, 0.7);
+        backdrop-filter: blur(10px);
+        z-index: 1000;
+        transition: background-color 0.3s, backdrop-filter 0.3s;
+        width: 100%;
+    }
+
+    .button-group h4 {
+        display: none; /* Hide button-group h4 */
+    }
+
+    .text-description .btn-lg {
+        font-size: 1.5rem;
+        padding: 0.5rem 1.5rem;
+    }
+
+    .card h3 {
+        font-size: 1.6rem; 
+    }
+}
+
+.button-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+.button-group h4 {
+    margin: 0;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    text-decoration: underline;
+}
+
+.button-group h4:hover {
+    color: #c82333;
+}
+
+.light-text,
+.text-description-list li {
+    font-family: 'AltivoLight', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: rgb(185, 180, 180);
+    text-align: center;
+}
+
+.italic-text,
+.light-italic {
+    font-family: 'AltivoItalic', sans-serif;
+    font-style: italic;
+}
+
+.medium-text {
+    font-family: 'AltivoMedium', sans-serif;
+    font-weight: 500;
+}
+
+.ultra-text {
+    font-family: 'AltivoUltra', sans-serif;
+    font-weight: 800;
+}
+
+.thin-italic {
+    font-family: 'AltivoThinItalic', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.divider {
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 20px;
+}

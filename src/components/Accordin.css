@@ -1,0 +1,160 @@
+.accordion {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: rgb(12, 12, 12);
+    color: #fff;
+    overflow: hidden;
+    padding: 2rem 10rem;
+}
+
+.accordion h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 2px;
+}
+
+.accordion-icon {
+    font-size: 1.2rem;
+    color: white;
+    margin-right: 1.5rem;
+}
+
+.accordion h2 {
+    padding-left: 2rem;
+    color: white;
+}
+
+.accordion-item {
+    border: none;
+    margin-bottom: 1rem;
+    background-color: rgb(12, 12, 12);
+}
+
+.accordion-title {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: rgb(12, 12, 12);
+    font-family: 'AltivoLight', sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+.accordion-title:hover {
+    background-color: #222;
+}
+
+.accordion-content {
+    padding: 1rem;
+    background-color: rgb(12, 12, 12);
+    text-align: left;
+    font-family: 'AltivoLight', sans-serif;
+    font-weight: 300;
+    color: rgb(148, 143, 143);
+}
+
+.accordion-item,
+.accordion-title,
+.accordion-content {
+    padding-left: 2rem;
+}
+
+/* Font styles for different text elements */
+.italic-text {
+    font-family: 'AltivoItalic', sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    color: white;
+}
+
+.light-text {
+    font-family: 'AltivoLight', sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+.light-italic {
+    font-family: 'AltivoLightItalic', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: white;
+}
+
+.medium-text {
+    font-family: 'AltivoMedium', sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+.medium-italic {
+    font-family: 'AltivoMediumItalic', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color: white;
+}
+
+.ultra-text {
+    font-family: 'AltivoUltra', sans-serif;
+    font-weight: 800;
+    color: white;
+}
+
+.ultra-italic {
+    font-family: 'AltivoUltraItalic', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    color: white;
+}
+
+.thin-italic {
+    font-family: 'AltivoThinItalic', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    color: white;
+}
+
+/* Responsive styles for all screen widths */
+@media (max-width: 1024px) {
+    .accordion {
+        padding: 1rem 1rem 5rem 1rem;
+    }
+
+    .accordion-title {
+        padding: 0.5rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .accordion-icon {
+        font-size: 1rem;
+    }
+
+    .accordion-content {
+        font-size: 0.875rem;
+        padding: 0.75rem;
+    }
+}
+
+/* Additional adjustments for mobile devices */
+@media (max-width: 768px) {
+    .accordion {
+        padding: 1rem;
+    }
+
+    .accordion-title {
+        font-size: 0.9rem;
+    }
+
+    .accordion-icon {
+        font-size: 0.9rem;
+    }
+
+    .accordion-content {
+        font-size: 0.8rem;
+    }
+}
